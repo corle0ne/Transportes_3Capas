@@ -8,7 +8,7 @@ using ViewObjects;
 
 namespace DataAccessLayer
 {
-    internal class DAL_Camiones
+    public class DAL_Camiones
     {
         //CREATE
 
