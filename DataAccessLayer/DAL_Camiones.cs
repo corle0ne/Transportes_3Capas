@@ -24,7 +24,7 @@ namespace DataAccessLayer
             {
 
                 //creo un dataset el cual recibira lo que devuelva la ejecucion del metodo "execute_dataset" de la clase "metodos_datos"
-                DataSet ds_camiones = metodos_datos.execute_DataSet("SP_Listar_Camiones", parametros);
+                DataSet ds_camiones = metodos_datos.execute_DataSet("sp_ListarCamiones", parametros);
                 //recorro cara renglon existente de nuestro ds creando objetos del tipo VO y añadiendolos a la lista
                 foreach (DataRow dr in ds_camiones.Tables[0].Rows)
                 {

@@ -62,7 +62,7 @@ namespace ViewObjects
             _Capacidad = int.Parse(dr["Capacidad"].ToString());
             _Kilometraje = double.Parse(dr["Kilometraje"].ToString());
             _UrlFoto = dr["UrlFoto"].ToString();
-            _Disponibilidad = bool.Parse(dr["Kilometraje"].ToString());
+            _Disponibilidad = bool.Parse(dr["Disponibilidad"].ToString());
         }
 
 
