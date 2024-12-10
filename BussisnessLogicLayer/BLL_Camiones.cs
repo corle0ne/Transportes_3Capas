@@ -11,7 +11,10 @@ namespace BussisnessLogicLayer
     public class BLL_Camiones
     {
         //CREATE
-
+        public static string crud_Camion(Camiones_VO camion)
+        {
+            return DAL_Camiones.crud_Camion(camion, "crear");
+        }
 
         //READ
 
@@ -23,7 +26,7 @@ namespace BussisnessLogicLayer
 
         //UPDATE
 
-
+ 
         //DELETE
     }
 }
