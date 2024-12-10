@@ -20,7 +20,6 @@ namespace ViewObjects
         private double _Kilometraje;
         private string _UrlFoto;
         private bool _Disponibilidad;
-
         //ENCAPSULAMIENTO
 
         public int ID_Camion { get => _ID_Camion; set => _ID_Camion = value; }
@@ -32,6 +31,7 @@ namespace ViewObjects
         public double Kilometraje { get => _Kilometraje; set => _Kilometraje = value; }
         public string UrlFoto { get => _UrlFoto; set => _UrlFoto = value; }
         public bool Disponibilidad { get => _Disponibilidad; set => _Disponibilidad = value; }
+        public string Accion { get => accion; set => accion = value; }
 
         //CONSTRUCTORES
 
@@ -48,7 +48,7 @@ namespace ViewObjects
             _Capacidad = 0;
             _Kilometraje = 0;
             _UrlFoto = "";
-            _Disponibilidad = true; 
+            _Disponibilidad = true;
         }
 
         //CON PARAMETROS
