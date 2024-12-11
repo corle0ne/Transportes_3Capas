@@ -31,6 +31,10 @@ namespace BussisnessLogicLayer
         {
             return DAL_Camiones.actualizar_Camion(camion, "actualizar");
         }
+        public static string crud_Camion3(int id)
+        {
+            return DAL_Camiones.eliminar_Camion(id, "eliminar");
+        }
 
         //DELETE
     }

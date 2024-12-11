@@ -111,16 +111,19 @@ namespace DataAccessLayer
         }
 
 
-        //DELETE
 
-        public static string eliminar_Camion(int id)
+        //DELETE
+        
+
+        public static string eliminar_Camion(int id,string accion)
         {
             string salida = "";
             int respuesta = 0;
             try
             {
                 respuesta = metodos_datos.execute_nonQuery("sp_Camiones",
-                    "@Id_Camion", id 
+                    "@ID_Camion", id ,
+                    "@accion", accion
                     );
 
                 if (respuesta != 0)
