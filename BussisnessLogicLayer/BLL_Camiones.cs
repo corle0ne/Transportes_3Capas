@@ -16,6 +16,7 @@ namespace BussisnessLogicLayer
             return DAL_Camiones.crud_Camion(camion, "crear");
         }
 
+
         //READ
 
         public static List<Camiones_VO> Get_Camiones(params object[] parametros) { 
@@ -26,7 +27,11 @@ namespace BussisnessLogicLayer
 
         //UPDATE
 
- 
+        public static string crud_Camion2(Camiones_VO camion)
+        {
+            return DAL_Camiones.actualizar_Camion(camion, "actualizar");
+        }
+
         //DELETE
     }
 }

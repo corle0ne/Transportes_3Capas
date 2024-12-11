@@ -75,7 +75,7 @@ namespace DataAccessLayer
         }
         //UPDATE
 
-        public static string actualizar_Camion(Camiones_VO camion)
+        public static string actualizar_Camion(Camiones_VO camion, string accion)
         {
             string salida = "";
             int respuesta = 0;
@@ -90,12 +90,13 @@ namespace DataAccessLayer
                     "@Kilometraje", camion.Kilometraje,
                     "@UrlFoto", camion.UrlFoto,
                     "@Disponibilidad", camion.Disponibilidad,
-                    "@Id_Camion", camion.ID_Camion
+                    "@Id_Camion", camion.ID_Camion,
+                    "@accion", accion
                     );
 
                 if (respuesta != 0)
                 {
-                    salida = "Camion registrado con exito";
+                    salida = "Camion actualizado con exito";
                 }
                 else
                 {

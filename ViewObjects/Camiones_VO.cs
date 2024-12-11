@@ -31,7 +31,7 @@ namespace ViewObjects
         public double Kilometraje { get => _Kilometraje; set => _Kilometraje = value; }
         public string UrlFoto { get => _UrlFoto; set => _UrlFoto = value; }
         public bool Disponibilidad { get => _Disponibilidad; set => _Disponibilidad = value; }
-        public string Accion { get => accion; set => accion = value; }
+      
 
         //CONSTRUCTORES
 
