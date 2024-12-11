@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BussisnessLogicLayer;
+using Transportes_3Capas.Utilidades;
 using ViewObjects;
 
 namespace Transportes_3Capas.Catalogos.Camiones
@@ -146,17 +147,25 @@ namespace Transportes_3Capas.Catalogos.Camiones
                 //preparamos la salida para cachar un error y mostrar el sweetalert
                 if (salida.ToUpper().Contains("ERROR"))
                 {
-
+                    titulo = "ops..";
+                    respuesta = salida;
+                    tipo = "warning";
                 }
                 else
                 {
-
+                    titulo = "correcto";
+                    respuesta = salida;
+                    tipo = "success";
                 }
             }
-            catch (Exception ex) { 
-            
-            
+            catch (Exception ex) {
+                titulo = "error";
+                respuesta = ex.Message;
+                tipo = "error";
+               
             }
+            sweetAlert.Sweet_Alert(titulo, respuesta, tipo, this.Page, this.GetType(), "/catalogos/camiones/listado_camiones.aspx");
+
 
             //sweet alert
         }

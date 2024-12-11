@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BussisnessLogicLayer;
+using Transportes_3Capas.Utilidades;
 
 namespace Transportes_3Capas.Catalogos.Camiones
 {
@@ -51,6 +52,8 @@ namespace Transportes_3Capas.Catalogos.Camiones
                 msg = respuesta;
                 tipo = "success";
             }
+
+            sweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
             cargarGrid();
         }
 

@@ -128,7 +128,7 @@ namespace DataAccessLayer
 
                 if (respuesta != 0)
                 {
-                    salida = "Camion registrado con exito";
+                    salida = "Camion Eliminado con exito";
                 }
                 else
                 {
